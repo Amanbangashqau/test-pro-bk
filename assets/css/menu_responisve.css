@@ -1,0 +1,80 @@
+/* CSS for small screens */
+@media screen and (max-width: 768px) {
+/* CSS for large screens */
+
+.contain-nav {
+  display: flex;
+  align-items: left;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.topnav {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.topnav li {
+  margin-right: 20px;
+  position: relative; /* Added */
+}
+
+.topnav ul.top {
+  position: absolute;
+  top: 100%;
+  right: 0; /* Positioned to the right */
+  display: none; /* Hidden by default */
+}
+
+.topnav li:hover ul.top {
+  display: block; /* Show on hover */
+}
+
+/* CSS for small screens */
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+  
+  .topnav {
+    display: none;
+    flex-direction: column;
+    align-items: left;
+  }
+
+  .topnav.visible {
+    display: flex;
+  }
+
+  .topnav li {
+    margin: 10px 0;
+    position: relative; /* Added */
+  }
+
+  .topnav ul.top {
+    position: static;
+    display: none;
+  }
+
+  .topnav li:hover ul.top {
+    display: block;
+  }
+
+  nav .contain-nav ul li ul li ul li a
+  {
+    text-align:right !important; 
+    padding-right:40px !important;
+
+
+  }
+
+  /* nav .contain-nav ul li ul li ul li a
+  {
+    background-color: rgb(146, 146, 146) !important;
+
+  } */
+}

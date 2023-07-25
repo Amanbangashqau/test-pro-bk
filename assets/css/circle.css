@@ -1,0 +1,85 @@
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /* background-color: #edf5a9; */
+    
+    background-size: cover;
+    /* optional: add box-shadow to create a depth effect */
+    box-shadow: 0px 0px 10px 0px #888888;
+    /* center the text horizontally and vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .text {
+    font-size: 22px;
+    color: rgb(15, 15, 15);
+    text-align: center;
+    margin-top: 5px;
+    }
+
+
+    .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    }
+
+
+    .col-sm-2 {
+    flex: 0 0 auto;
+    width: 19.66666667%;
+    max-width: 19.66666667%;
+    align-content: center;
+    }
+
+    .circle:hover {
+      /* change background color and box-shadow on hover */
+      background-color: #c7d16d;
+      box-shadow: 0px 0px 20px 0px #888888;
+    }
+
+    .text a {
+      /* add text-decoration: none to remove underline from link */
+      text-decoration: none;
+      color: rgb(14, 13, 13);
+    }
+
+    a {
+      /* add text-decoration: none to remove underline from link */
+      text-decoration: none;
+      color: rgb(14, 13, 13);
+    }
+
+    .contain-circle {
+        width: 70%;
+        margin: 0 auto 20px;
+    }
+
+
+    /* Responsive Styles */
+@media (max-width: 768px) {
+  .col-sm-2 {
+    width: 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-sm-2 {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .row > .col-sm-2 {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .contain-circle {
+    width: 90%;
+  }
+}
