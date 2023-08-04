@@ -174,8 +174,16 @@ textarea {
  */
 
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
+  text-transform: none;
+  border-radius: 6px;
+  border: 1px solid #f88777;
+  padding: 10px 16px;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 1rem;
 }
 
 /**
@@ -184,8 +192,18 @@ input { /* 1 */
  */
 
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
+  border-radius: 6px;
+  border: 1px solid #f88777;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.right-aside-form-table {
+  width: 100%;
 }
 
 /**
