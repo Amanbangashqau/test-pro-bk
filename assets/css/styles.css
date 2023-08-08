@@ -63,6 +63,14 @@ div.content-wrapper {
   background-image: url(../images/paper-bkgd3.jpg);
 }
 
+.main-logo-web {
+  width: 200px;
+  position: absolute;
+  z-index: 999;
+  top: 3rem;
+  left: 6rem;
+}
+
 nav {
   display: flex;
 
@@ -426,23 +434,14 @@ h5,
 div.feature-link a:link,
 div.feature-link a:visited {
   font-family: chevin-pro, sans-serif;
-
   font-weight: 500;
-
   font-style: normal;
-
   width: 100%;
-
-  text-align: center;
-
+  text-align: start;
   text-decoration: none;
-
-  color: #08082f;
-
+  color: #f88777;
   font-size: 2rem;
-
   z-index: 10;
-
   line-height: 100%;
 }
 
@@ -1467,7 +1466,7 @@ body.inner.product-focus section.feature.right aside.right-aside span {
 
 body.inner.product-focus section.feature.left aside.right-aside span {
   color: #f88777;
-  text-align: center;
+  text-align: start;
   font-family: Outfit;
   font-size: 40px;
   font-style: normal;
@@ -1515,24 +1514,15 @@ body.upload .main-content #upload-result span {
 
 .detail-message {
   display: block;
-
   margin: 0 auto;
-
   font-size: 2rem;
-
   width: auto;
-
   text-align: center;
-
   padding: 15px 15%;
-
   margin: 40px 0;
-
-  background-color: #ddb8bf;
-
-  border: 1px solid #08082f;
-
+  background-color: #f88777;
   line-height: 120%;
+  border-radius: 4px;
 }
 
 .detail-message div.corner-bracket {
@@ -1586,7 +1576,7 @@ body.inner.product-focus section.tab-group article:first-of-type div.tab-box {
 body.inner.product-focus section.tab-group div.tab-button {
   width: max-content;
 
-  background-color: #ad7680;
+  background-color: #f88777;
 
   padding: 10px 30px;
 
@@ -1623,20 +1613,16 @@ body.inner.product-focus section.tab-group article p:first-of-type {
 
 body.inner.product-focus section.tab-group article p {
   padding: 0px 20px 0;
-
   width: 60.2%;
-
   float: right;
 }
 
 body.inner.product-focus section.tab-group article div.tab-box {
   overflow: auto;
-
   display: none;
-
   background-color: #fff;
-
-  border: 1px solid #5d0400;
+  border-radius: 8px;
+  padding: 1rem;
 }
 
 body.inner.product-focus section.tab-group article div.tab-box.visible {
@@ -1856,15 +1842,10 @@ footer span,
 footer a:link,
 footer a:visited {
   display: block;
-
   font-size: 1rem;
-
   font-weight: 500;
-
-  color: #fff;
-
+  color: #fedead;
   line-height: 1.8rem;
-
   text-decoration: none;
 }
 
